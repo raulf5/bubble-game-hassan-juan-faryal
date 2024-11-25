@@ -1,0 +1,2 @@
+import AFRAME from 'aframe';
+
