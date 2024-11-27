@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title><link rel="stylesheet" href="stile.css">
+
+    
+  </head>
+  <body>
+
+    <a-scene>
+        <a-assets>
+            <img id="agua" src="/textura/agua3.jpg" alt="">
+            <img id="arena2" src="textura/arena5.avif" alt="piso de arena" />
+          <a-asset-item id="coral" src="/textura/3d/corales/coral1.glb" ></a-asset-item>
+          <a-asset-item id="coral2" src="/textura/3d/corales/coral2.glb" ></a-asset-item>
+          <a-asset-item id="coral3" src="/textura/3d/corales/coral3.glb" ></a-asset-item>
+          <a-asset-item id="pez1" src="/textura/3d/peces/pez1.glb"  ></a-asset-item>
+          <a-asset-item id="" src="" ></a-asset-item>
+          <a-asset-item id="" src="" ></a-asset-item>
+          <a-asset-item id="" src="" ></a-asset-item>
+
+
+
+
+        </a-assets>
+        <a-sky src="#agua"></a-sky>
+
+        <a-plane
+            src="#arena2"
+            width="200%"
+            height="200%"
+            rotation="-90 0 0"
+            position="0 0 0"
+        >
+      </a-plane>
+      <a-camera>
+        <a-cursor></a-cursor>
+        <a-text 
+            value="0 burst bubbles"
+            color="black" 
+            position="-0.16 -0.1 -1" 
+            width="1.2">
+        </a-text>
+      </a-camera>
+
+     <a-entity
+     gltf-model="#coral"
+     position="0 0 0"
+     scale="1 1 1"
+     rotation="0 0 0"
+     >
+     </a-entity>
+     <a-entity
+     gltf-model="#coral"
+     position="0 0 20"
+     scale="1 1 1"
+     rotation="0 0 0"
+     >
+     </a-entity>
+     <a-entity
+     gltf-model="#coral2"
+     position="15 0 10"
+     scale="1 1 1"
+     rotation="0 0 0"
+     >
+     </a-entity>
+     <a-entity
+     gltf-model="#coral3"
+     position="-15 0 10"
+     scale="1 1 1"
+     rotation="0 0 0"
+     >
+     </a-entity>
+     <a-entity
+     gltf-model="#pez1" 
+     position="0 2.3 -15" 
+     scale="1 1 1" 
+     animation-mixer="loop: repeat"     >
+     </a-entity>
+
+      <script type="module" src="/js/main.js"></script>
+    </a-scene>
+  </body>
+</html>
