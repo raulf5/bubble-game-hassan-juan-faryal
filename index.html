@@ -21,16 +21,21 @@
         <a-asset-item id="pez4" src="/textura/3d/peces/pez4.glb"></a-asset-item>
         <a-asset-item id="alga1" src="/textura/3d/corales/alga1.glb"></a-asset-item>
         <a-asset-item id="alga2" src="/textura/3d/corales/alga2.glb"></a-asset-item>
+        <audio id="background-music" src="textura/musica/underwater-ambience-6201.mp3" loop></audio>
       </a-assets>
-      <a-sound src="/textura/musica/underwater-ambience-6201.mp3" autoplay="true" position="0 2 5"></a-sound>
       <a-sky src="#agua"></a-sky>
       
       <a-plane src="#arena2" width="150%" height="150%" rotation="-90 0 0" position="0 0 -0.10" ></a-plane>
       <a-camera>
         <a-cursor cursor="fuse: true; fuseTimeout: 100" raycaster="objects: .burbuja"
-        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="shader: flat"></a-cursor>
-        <a-text value="0 burst bubbles" color="black" position="-0.16 -0.1 -1" width="1.2"></a-text>
+                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="shader: flat"></a-cursor>
+        <a-text   value="0 burst bubbles" color="black" position="-0.16 -0.1 -1" width="1.2"></a-text>
       </a-camera>
+
+      <!-- Reproducir el audio de fondo -->
+      <a-entity
+        sound="src: #background-music; autoplay: true; loop: true; volume: 1.0">
+      </a-entity>
 
       <a-entity gltf-model="#coral1" position="0 0 0" scale="0 0 0" rotation="0 0 0"></a-entity>
       <a-entity gltf-model="#coral1" position="0 0 20" scale="0 0 0" rotation="0 0 0"></a-entity>
