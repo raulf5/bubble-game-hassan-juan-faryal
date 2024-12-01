@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 3D en A-Frame</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Cielo azul -->
+      <a-sky color="#0077be"></a-sky>
+
+      <!-- Luz direccional -->
+      <a-light type="directional" color="#ffffff" intensity="1" position="2 4 -2"></a-light>
+
+      <!-- Suelo -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#8FC0A9"></a-plane>
+
+
+      <!-- Cámara -->
+      <a-camera position="0 1.6 3"></a-camera>
+    </a-scene>
+  </body>
+</html>
