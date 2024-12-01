@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    position: absolute;
+    bottom: 20px; /* Samee mid hoose ku jira */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Samee ballaadhan haddii loo baahdo */
+    color: white; /* Ka dhig qoraalka mid cad si uu ugu muuqdo asalka madow */
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 2; /* Sare mari si uu uga muuqdo */
+    text-align: center;
+}
+
+.container p {
+    margin: 0 0 15px;
+    font-size: 25px;
+    line-height: 1.5;
+    color:wheat;
+       text-shadow: 
+    0 0 20px #001F3D,
+    0 0 30px #ff6600,
+    0 0 40px #ff9900,
+    0 0 50px #ff3300;
+    
+}
+
+.btn {
+    font-size: 25px;
+    display: inline-block;
+    background: orangered;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background:rgba(0, 0, 0, 0.7); /* Midab mugdi ah marka la dul istaago */
+}
