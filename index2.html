@@ -3,24 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.2/dist/aframe-extras.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="agua" src="textura/agua3.jpg" alt="" />
-        <img id="arena2" src="textura/arena5.avif" alt="piso de arena" />
-        <img id="burbuja" src="textura/burbuja.jpeg" alt="burbuja">
-        <a-asset-item id="coral1" src="textura/3d/corales/coral1.glb"></a-asset-item>
-        <a-asset-item id="coral2" src="textura/3d/corales/coral2.glb"></a-asset-item>
-        <a-asset-item id="coral3" src="textura/3d/corales/coral3.glb"></a-asset-item>
-        <a-asset-item id="pez1" src="textura/3d/peces/pez1.glb"></a-asset-item>
-        <a-asset-item id="pez2" src="textura/3d/peces/pez2.glb"></a-asset-item>
-        <a-asset-item id="pez3" src="textura/3d/peces/pez3.glb"></a-asset-item>
-        <a-asset-item id="pez4" src="textura/3d/peces/pez4.glb"></a-asset-item>
-        <a-asset-item id="alga1" src="textura/3d/corales/alga1.glb"></a-asset-item>
-        <a-asset-item id="alga2" src="textura/3d/corales/alga2.glb"></a-asset-item>
-        <audio id="background-music" src="textura/musica/underwater-ambience-6201.mp3" loop></audio>
+        <img id="agua" src="/textura/agua3.jpg" alt="" />
+        <img id="arena2" src="/textura/arena5.avif" alt="piso de arena" />
+        <img id="burbuja" src="/textura/burbuja.jpeg" alt="burbuja">
+        <a-asset-item id="coral1" src="/textura/3d/corales/coral1.glb"></a-asset-item>
+        <a-asset-item id="coral2" src="/textura/3d/corales/coral2.glb"></a-asset-item>
+        <a-asset-item id="coral3" src="/textura/3d/corales/coral3.glb"></a-asset-item>
+        <a-asset-item id="pez1" src="/textura/3d/peces/pez1.glb"></a-asset-item>
+        <a-asset-item id="pez2" src="/textura/3d/peces/pez2.glb"></a-asset-item>
+        <a-asset-item id="pez3" src="/textura/3d/peces/pez3.glb"></a-asset-item>
+        <a-asset-item id="pez4" src="/textura/3d/peces/pez4.glb"></a-asset-item>
+        <a-asset-item id="alga1" src="/textura/3d/corales/alga1.glb"></a-asset-item>
+        <a-asset-item id="alga2" src="/textura/3d/corales/alga2.glb"></a-asset-item>
+        <audio id="background-music" src="/textura/musica/underwater-ambience-6201.mp3" loop></audio>
       </a-assets>
       <a-sky src="#agua"></a-sky>
       
@@ -70,7 +72,7 @@
         </a-entity>
 
 
-        <script type="module" src="js/main.js"></script>
+        <script type="module" src="/js/main.js"></script>
     </a-scene>
   </body>
 </html>
